@@ -14,5 +14,37 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('user.home');
+});
+
+
+Route::get('/cart', function () {
+    return view('user.cart');
+});
+
+
+
+
+Route::get('/dashobard', function () {
+    return view('admin.dashboard');
+});
+
+Route::get('/orders', function () {
+    return view('admin.orders');
+});
+
+Route::get('/products', function () {
+    return view('admin.products');
+});
+
+Route::get('/brands', function () {
+    return view('admin.brands');
+});
+
+Route::get('/categories', function () {
+    return view('admin.categories');
+});
+
+Route::get('/customers', function () {
+    return view('admin.customers');
 });
